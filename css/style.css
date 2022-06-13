@@ -14,14 +14,14 @@
 	}
 
 	.homebackground {
-		background-image: url("/img/pizza-background-home.jpg");
+		background-image: url("../img/pizza-background-home.jpg");
 		background-size: cover;
 		background-position: 50% 50%;
 		background-attachment: fixed;
 	}
 
 	.background-img {
-		background-image: url("/img/pizza-background.jpg");
+		background-image: url("../img/pizza-background.jpg");
 		background-size: cover;
 		background-position: 50% 50%;
 		background-attachment: fixed;
