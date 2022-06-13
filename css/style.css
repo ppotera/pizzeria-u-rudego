@@ -32,7 +32,7 @@
 	.menu-icon {
 		display: none;
 	}
-	
+
 	h1 {
 		font-size: 36px;
 		position: absolute;
@@ -224,9 +224,13 @@
 		left: 50vw;
 		transform: translate(-15%);
 		line-height: 30px;
-		text-transform: capitalize;
 		text-align: justify;
 		text-justify: inter-word;
+	}
+
+	.contact-in-about {
+		text-decoration: underline;
+		color: wheat;
 	}
 }
 
@@ -403,7 +407,7 @@
 		font-size: 9vh;
 		text-decoration: none;
 		text-transform: uppercase;
-		line-height: 1.2;
+		line-height: 1.4;
 		font-weight: 800;
 		display: inline-block;
 		position: relative;
@@ -456,12 +460,10 @@
 		.menu-icon:not(:checked) + label {
 			right: 40px;
 		}
-		
+
 		.nav {
 			right: 15px;
 		}
-
-		
 	}
 
 	.h1home {
@@ -495,12 +497,28 @@
 		border-radius: 15%;
 	}
 
+	.h1about {
+		position: absolute;
+		/* top: 58px; */
+		top: 12vh;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		font-size: 32px;
+		white-space: nowrap;
+	}
 
+	.lorem-about {
+		position: absolute;
+		top: 18vh;
+		margin: 7.5vw;
+		line-height: 24px;
+		text-align: justify;
+		text-justify: inter-word;
+	}
 }
 
 @media (max-width: 400px) {
-	.h1home{
-
+	.h1home {
 		white-space: normal;
 		text-align: center;
 		top: 23vh;
