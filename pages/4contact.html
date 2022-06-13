@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="../css/style.css">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Convergence&family=Josefin+Sans:wght@700&display=swap"
+          rel="stylesheet">
+     <title>Pizzeria u Rudego! - Kontakt</title>
+</head>
+
+<body>
+     <nav>
+          <ul>
+               <li><a href="1index.html">Home</a></li>
+               <li><a href="2about.html">O nas</a></li>
+               <li><a href="3menu.html">Menu</a></li>
+               <li><a class="active" href="4contact.html">Kontakt</a></li>
+          </ul>
+     </nav>
+     <main>
+          <img class="background-img" src="../img/pizza-background.jpg" alt="Pizza włoska">
+          <h1>Kontakt</h1>
+          <div class="formcontainer">
+               <form action="">
+                    <table class="tbcontact">
+                         <tr>
+                              <td class="tdcontact"><label for="fname">Imię</label></td>
+                              <td class="tdcontact"><input type="text" id="fname" name="firstname"
+                                        placeholder="Wpisz Twoje imię.."></td>
+                         </tr>
+                         <tr>
+                              <td class="tdcontact"><label for="lname">Nazwisko</label></td>
+                              <td class="tdcontact"><input type="text" id="lname" name="lastname"
+                                        placeholder="Wpisz Twoje nazwisko..">
+                              </td>
+                         </tr>
+                         <tr>
+                              <td class="tdcontact"><label for="country">Miasto</label></td>
+                              <td class="tdcontact"><select id="city" name="city">
+                                        <option value="jaroslaw">Jarosław</option>
+                                        <option value="widna_gora">Widna Góra</option>
+                                        <option value="szowsko">Szówsko</option>
+                                        <option value="rozwienica">Roźwienica</option>
+                                        <option value="tywonia">Tywonia</option>
+                                   </select></td>
+                         </tr>
+                         <tr>
+                              <td class="tdcontact"><label for="subject">Temat</label>
+                              </td>
+                              <td class="tdcontact"><textarea id="subject" name="subject"
+                                        placeholder="Opisz swój problem" style="height:200px"></textarea></td>
+                         </tr>
+                         <tr>
+                              <td class="tdcontact tdsubmit"></td>
+                              <td class="tdcontact tdsubmit"><input type="submit" value="Wyślij"></td>
+                         </tr>
+                    </table>
+               </form>
+          </div>
+          <table class="adress">
+               <tr>
+                    <td class="tdcontact">Telefon:</td>
+                    <td class="tdcontact">+48 123 456 789</td>
+               </tr>
+               <tr>
+                    <td class="tdcontact">Adres: </td>
+                    <td class="tdcontact">Jarosław, ul. Św. Ducha 1A</td>
+               </tr>
+          </table>
+
+
+     </main>
+     <<footer class="home-footer">
+          <p>Site created by @Paweł Potera</p>
+          </footer>
+</body>
+
+</html>
