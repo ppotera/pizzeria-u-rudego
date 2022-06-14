@@ -27,6 +27,17 @@
 		background-attachment: fixed;
 	}
 
+	input:focus,
+	textarea:focus {
+		box-shadow: 0 0px 2px rgba(#e74c3c, 1) !important;
+		border: 1px solid #e74c3c;
+	}
+
+	.contact-in-about {
+		text-decoration: underline;
+		color: rgb(241, 230, 206);
+	}
+
 	.xsdevices {
 		display: none;
 	}
@@ -150,6 +161,7 @@
 
 	.menu {
 		position: absolute;
+		z-index: -2;
 		top: 30vh;
 		left: 50vw;
 		transform: translate(-8%);
@@ -232,11 +244,6 @@
 		text-justify: inter-word;
 	}
 
-	.contact-in-about {
-		text-decoration: underline;
-		color: wheat;
-	}
-
 	form.cf {
 		position: absolute;
 		/* width: 800px; */
@@ -277,7 +284,7 @@
 	}
 
 	#input-submit:hover {
-		box-shadow: 0 1px 1px 1px rgba(#aaa, 0.6);
+		box-shadow: 0 12px 16px 0 rgba(255, 255, 255, 0.1), 0 17px 50px 0 rgba(255, 255, 255, 0.1);
 	}
 
 	.half {
@@ -610,6 +617,77 @@
 		padding: 10px;
 		background-color: #111;
 	}
+
+	form.cf {
+		position: absolute;
+		/* width: 800px; */
+		width: 80vw;
+		text-align: center;
+		/* margin: 20px auto; */
+		top: 60vh;
+		left: 50%;
+		transform: translate(-50%, -40%);
+	}
+
+	input,
+	textarea {
+		color: #111;
+		border: 0;
+		outline: 0;
+		padding: 1em;
+		border-radius: 8px;
+		display: block;
+		width: 100%;
+		margin-top: 1em;
+		font-family: "Merriweather", sans-serif;
+		box-shadow: 0 1px 1px rgba(black, 0.1);
+		resize: none;
+	}
+
+	.message {
+		height: 17vh;
+		position: relative;
+		top: calc(0.5 * 45vh);
+		transform: translateY(-133%);
+	}
+
+	#input-submit {
+		color: white;
+		background: #e74c3c;
+		cursor: pointer;
+	}
+
+	.half {
+		float: left;
+		width: 48%;
+		margin-bottom: 1em;
+	}
+
+	.right {
+		width: 50%;
+	}
+
+	.left {
+		margin-right: 2%;
+	}
+
+	.h1contact {
+		position: absolute;
+		/* top: 58px; */
+		top: 8vh;
+		left: 50%;
+		transform: translate(-70%, -45%);
+		font-size: 32px;
+		white-space: nowrap;
+	}
+
+	table.adress {
+		position: absolute;
+		width: 80vw;
+		top: 30vh;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
 }
 
 @media (max-width: 400px) {
@@ -630,9 +708,11 @@
 
 	.menu {
 		position: absolute;
+		width: 120vw;
 		top: 15vh;
 		margin: 0px;
-		border: 1px solid white;
+		border: none;
+		border-top: 1px solid white;
 		border-collapse: collapse;
 		line-height: 33px;
 	}
@@ -642,18 +722,17 @@
 }
 
 @media (max-width: 180px) {
-	body {
+	body.homebackground {
 		background-color: white;
 		background-image: none !important;
 	}
 
 	button,
-	h1,
+	h1.h1home,
 	span,
 	label::before,
 	label::after,
 	.menu-icon:checked,
-	input,
 	nav,
 	.nav,
 	.pt-5,

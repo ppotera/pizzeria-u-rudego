@@ -39,15 +39,15 @@
 
           <form class="cf">
                <div class="half left cf">
-                    <input type="text" id="input-name" placeholder="Name">
-                    <input type="email" id="input-email" placeholder="Email address">
-                    <input type="text" id="input-subject" placeholder="Subject">
+                    <input type="text" id="input-name" placeholder="Imię">
+                    <input type="email" id="input-email" placeholder="Email" pattern="\w+@\w+\.([a-z]){2,}$">
+                    <input type="text" id="input-subject" placeholder="Temat">
                </div>
                <div class="half right cf">
                     <textarea class="message" name="message" type="text" id="input-message"
-                         placeholder="Message"></textarea>
+                         placeholder="Treść"></textarea>
                </div>
-               <input type="submit" value="Submit" id="input-submit">
+               <input type="submit" value="Wyślij" id="input-submit">
           </form>
 
      </main>
