@@ -143,7 +143,7 @@
 		opacity: 1;
 		box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 	}
-
+	
 	.menu {
 		position: absolute;
 		top: 30vh;
@@ -156,20 +156,20 @@
 		padding: 20px;
 		border-collapse: collapse;
 	}
-
+	
 	td {
 		line-height: 60px;
 		border: 1px solid white;
 		padding: 15px;
 	}
-
+	
 	th {
 		font-family: "Josefin Sans", sans-serif;
 		font-weight: bold;
 		text-align: center;
 		padding: 15px;
 	}
-
+	
 	input[type="text"],
 	select,
 	textarea {
@@ -177,7 +177,7 @@
 		height: 100%;
 		border-radius: 4px;
 	}
-
+	
 	input[type="submit"] {
 		background-color: #04aa6d;
 		padding: 12px 20px;
@@ -186,11 +186,11 @@
 		cursor: pointer;
 		transition: 0.3s;
 	}
-
+	
 	input[type="submit"]:hover {
 		background-color: #45a049;
 	}
-
+	
 	.tdcontact {
 		border: none;
 		text-align: center;
@@ -198,7 +198,7 @@
 		padding: 0;
 		margin: 0;
 	}
-
+	
 	.tbcontact {
 		position: absolute;
 		top: 35vh;
@@ -207,14 +207,14 @@
 		width: 50vw;
 		height: 55vh;
 	}
-
+	
 	.adress {
 		position: absolute;
 		top: 20vh;
 		left: 15vw;
 		width: 20vw;
 	}
-
+	
 	.lorem-about {
 		font-size: 20px;
 		min-width: 500px;
@@ -227,7 +227,7 @@
 		text-align: justify;
 		text-justify: inter-word;
 	}
-
+	
 	.contact-in-about {
 		text-decoration: underline;
 		color: wheat;
@@ -266,8 +266,8 @@
 		border-top: 2px solid #ececee;
 		border-bottom: 2px solid #ececee;
 		transition: border-width 100ms 1500ms ease, top 100ms 1600ms cubic-bezier(0.23, 1, 0.32, 1),
-			height 100ms 1600ms cubic-bezier(0.23, 1, 0.32, 1), background-color 200ms ease,
-			transform 200ms cubic-bezier(0.23, 1, 0.32, 1);
+		height 100ms 1600ms cubic-bezier(0.23, 1, 0.32, 1), background-color 200ms ease,
+		transform 200ms cubic-bezier(0.23, 1, 0.32, 1);
 	}
 	.menu-icon:checked + label:after,
 	.menu-icon:not(:checked) + label:after {
@@ -282,7 +282,7 @@
 		background-color: #ececee;
 		margin-top: -1px;
 		transition: width 100ms 1750ms ease, right 100ms 1750ms ease, margin-top 100ms ease,
-			transform 200ms cubic-bezier(0.23, 1, 0.32, 1);
+		transform 200ms cubic-bezier(0.23, 1, 0.32, 1);
 	}
 	.menu-icon:checked + label:before {
 		top: 10px;
@@ -291,8 +291,8 @@
 		background-color: #ececee;
 		border-width: 0;
 		transition: border-width 100ms 340ms ease, top 100ms 300ms cubic-bezier(0.23, 1, 0.32, 1),
-			height 100ms 300ms cubic-bezier(0.23, 1, 0.32, 1), background-color 200ms 500ms ease,
-			transform 200ms 1700ms cubic-bezier(0.23, 1, 0.32, 1);
+		height 100ms 300ms cubic-bezier(0.23, 1, 0.32, 1), background-color 200ms 500ms ease,
+		transform 200ms 1700ms cubic-bezier(0.23, 1, 0.32, 1);
 	}
 	.menu-icon:checked + label:after {
 		width: 30px;
@@ -300,9 +300,9 @@
 		right: 0;
 		transform: rotate(-45deg);
 		transition: width 100ms ease, right 100ms ease, margin-top 100ms 500ms ease,
-			transform 200ms 1700ms cubic-bezier(0.23, 1, 0.32, 1);
+		transform 200ms 1700ms cubic-bezier(0.23, 1, 0.32, 1);
 	}
-
+	
 	.nav {
 		position: fixed;
 		top: 15px;
@@ -321,62 +321,62 @@
 		transition: top 350ms 1100ms cubic-bezier(0.23, 1, 0.32, 1), right 350ms 1100ms cubic-bezier(0.23, 1, 0.32, 1),
 			transform 250ms 1100ms ease, width 650ms 400ms cubic-bezier(0.23, 1, 0.32, 1),
 			height 650ms 400ms cubic-bezier(0.23, 1, 0.32, 1);
-	}
-
-	nav.nav.othernav {
-		background-color: #333;
-	}
-	/* @keyframes border-transform {
-		0%,
-		100% {
-			border-radius: 63% 37% 54% 46% / 55% 48% 52% 45%;
 		}
-		14% {
-			border-radius: 40% 60% 54% 46% / 49% 60% 40% 51%;
+		
+		nav.nav.othernav {
+			background-color: #333;
 		}
-		28% {
-			border-radius: 54% 46% 38% 62% / 49% 70% 30% 51%;
-		}
-		42% {
-			border-radius: 61% 39% 55% 45% / 61% 38% 62% 39%;
-		}
-		56% {
-			border-radius: 61% 39% 67% 33% / 70% 50% 50% 30%;
-		}
-		70% {
-			border-radius: 50% 50% 34% 66% / 56% 68% 32% 44%;
-		}
-		84% {
-			border-radius: 46% 54% 50% 50% / 35% 61% 39% 65%;
-		}
-	}  */
-
-	.menu-icon:checked ~ .nav {
-		animation-play-state: paused;
-		top: 50%;
-		right: 50%;
-		transform: translate(50%, -50%);
-		width: 200%;
-		height: 200%;
-		transition: top 350ms 700ms cubic-bezier(0.23, 1, 0.32, 1), right 350ms 700ms cubic-bezier(0.23, 1, 0.32, 1),
+		/* @keyframes border-transform {
+			0%,
+			100% {
+				border-radius: 63% 37% 54% 46% / 55% 48% 52% 45%;
+			}
+			14% {
+				border-radius: 40% 60% 54% 46% / 49% 60% 40% 51%;
+			}
+			28% {
+				border-radius: 54% 46% 38% 62% / 49% 70% 30% 51%;
+			}
+			42% {
+				border-radius: 61% 39% 55% 45% / 61% 38% 62% 39%;
+			}
+			56% {
+				border-radius: 61% 39% 67% 33% / 70% 50% 50% 30%;
+			}
+			70% {
+				border-radius: 50% 50% 34% 66% / 56% 68% 32% 44%;
+			}
+			84% {
+				border-radius: 46% 54% 50% 50% / 35% 61% 39% 65%;
+			}
+		}  */
+		
+		.menu-icon:checked ~ .nav {
+			animation-play-state: paused;
+			top: 50%;
+			right: 50%;
+			transform: translate(50%, -50%);
+			width: 200%;
+			height: 200%;
+			transition: top 350ms 700ms cubic-bezier(0.23, 1, 0.32, 1), right 350ms 700ms cubic-bezier(0.23, 1, 0.32, 1),
 			transform 250ms 700ms ease, width 750ms 1000ms cubic-bezier(0.23, 1, 0.32, 1),
 			height 750ms 1000ms cubic-bezier(0.23, 1, 0.32, 1);
-	}
-
-	.nav ul {
-		position: absolute;
-		top: 50%;
-		left: 0;
-		display: block;
-		width: 100%;
-		padding: 0;
-		margin: 0;
-		z-index: 6;
-		text-align: center;
-		transform: translateY(-50%);
-		list-style: none;
-	}
-	.nav ul li {
+		}
+		
+		.nav ul {
+			position: absolute;
+			top: 50%;
+			left: 0;
+			display: block;
+			width: 100%;
+			padding: 0;
+			margin: 0;
+			z-index: 6;
+			text-align: center;
+			transform: translateY(-50%);
+			list-style: none;
+		}
+		.nav ul li {
 		position: relative;
 		display: block;
 		width: 100%;
@@ -421,20 +421,20 @@
 	.nav ul li a:after {
 		display: block;
 		position: absolute;
-		top: 50%;
+		top: 100%;
 		content: "";
 		height: 2vh;
 		margin-top: -1vh;
 		width: 0;
 		left: 0;
-		background-color: #353746;
+		background-color: #ffeba7;
 		opacity: 0.8;
 		transition: width 250ms linear;
 	}
 	.nav ul li a:hover:after {
 		width: 100%;
 	}
-
+	
 	.menu-icon:checked ~ .nav ul li {
 		pointer-events: auto;
 		visibility: visible;
@@ -454,18 +454,22 @@
 	.menu-icon:checked ~ .nav ul li:nth-child(4) {
 		transition-delay: 1640ms;
 	}
-
+	
 	@media screen and (max-width: 991px) {
 		.menu-icon:checked + label,
 		.menu-icon:not(:checked) + label {
 			right: 40px;
 		}
-
+		
 		.nav {
 			right: 15px;
 		}
 	}
-
+	
+	button.see-menu:hover {
+		opacity: 1;
+		box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+	}
 	.h1home {
 		position: absolute;
 		/* top: 58px; */
@@ -475,7 +479,7 @@
 		font-size: 32px;
 		white-space: nowrap;
 	}
-
+	
 	span.span-home {
 		font-size: 25px;
 		position: absolute;
@@ -496,7 +500,7 @@
 		opacity: 90%;
 		border-radius: 15%;
 	}
-
+	
 	.h1about {
 		position: absolute;
 		/* top: 58px; */
@@ -515,6 +519,26 @@
 		text-align: justify;
 		text-justify: inter-word;
 	}
+	.h1menu {
+		position: absolute;
+		top: 8vh;
+		left: 50%;
+		transform: translate(-85%, -50%);
+
+	}
+
+	.menu {
+		position: absolute;
+		top: 15vh;
+		margin: 15px;
+		border: 1px solid white;
+		border-collapse: collapse;
+		line-height: 30px;
+	}
+	
+	table.menu td {
+		border-top: 1px solid white;
+	}
 }
 
 @media (max-width: 400px) {
@@ -523,13 +547,25 @@
 		text-align: center;
 		top: 23vh;
 	}
-
+	
 	span.span-home {
 		white-space: normal;
 		text-align: center;
 	}
-
+	
 	button.see-menu {
 		top: 65vh;
+	}
+	
+	.menu {
+		position: absolute;
+		top: 15vh;
+		margin: 0px;
+		border: 1px solid white;
+		border-collapse: collapse;
+		line-height: 33px;
+	}
+	table.menu td {
+		border-top: 1px solid white;
 	}
 }
